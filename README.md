@@ -59,6 +59,12 @@ This blog embraces the raw, authentic feel of early web design:
    docker compose up --build
    ```
 
+Use without --build unless gemfile or dockerfile have changed. To stop:
+
+   ```bash
+   docker compose down
+   ```
+
 2. **Setup Database**
    ```bash
    docker compose exec web rails db:create db:migrate db:seed
